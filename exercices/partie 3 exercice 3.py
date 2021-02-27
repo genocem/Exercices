@@ -1,6 +1,4 @@
 def F1(L,a):
-
-        n=65
         m = 0
         p = [0]
         g=0
@@ -13,13 +11,10 @@ def F1(L,a):
             if i==a and g==1 :
                 p.append   (   L.index(a, p[m]+1  ))
                 m+=1
-        if L[0]==a:
-            n=8686
-        else:
+        if L[0]!=a:
             del p[0]
         if a in L:
             return p
         else:
             return -1
-
 
